@@ -1,0 +1,20 @@
+Pseudo code :
+
+M -> number of generations
+N -> population size
+p_c -> probability of crossover
+p_m -> probability of mutation
+k -> tournament selection "number of contestants"
+l -> lenght of chromosome
+
+
+1) Set parameters M,N,p_c,p_m and k 
+2) Create N population randomly of string size l
+3) m = 1 and n = 1
+4) Select 2 parents through selection method
+5) Crossover the parents' genes to get children
+6) Mutate children
+7) n = n +1 & Repeat steps 4 - 6 N/2 times 
+8) Get new generation of mutated children
+9) m = m + 1 & Repeat steps 4 - 9 M times
+10) Choose best fitness value from last generation or keep track of best chromosome in each generation for final answer
